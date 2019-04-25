@@ -7,7 +7,6 @@ import Head from 'next/head';
 import formatMoney from '../lib/formatMoney';
 import Link from 'next/link';
 import AddToCart from './AddToCart';
-import PleaseSignIn from './PleaseSignIn';
 
 const SingleItemStyles = styled.div`
   max-width: 1200px;
@@ -77,9 +76,7 @@ class SingleItem extends Component {
                     <button>Edit Here✏️</button>
                   </span>
                 </Link>
-                <PleaseSignIn>
-                  <AddToCart id={item.id} />
-                </PleaseSignIn>
+                <AddToCart id={item.id} />
               </div>
             </SingleItemStyles>
           );
